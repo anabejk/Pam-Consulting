@@ -373,17 +373,50 @@ header {
 .advantage-cyprus,
 .structure-item {
   display: flex;
+  justify-content: flex-start;
   gap: 20px;
 }
 .advantage-cyprus li,
 .structure-item li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   width: calc(100%/4);
 }
-.advantage-cyprus img,
-.structure-item img {
-  display: inline-block;
+.advantage-cyprus .icon-box {
+  width: 150px;
+  height: 150px;
+}
+.structure-item .icon-box {
+  width: 120px;
+  height: 120px;
+}
+.advantage-cyprus .icon-box,
+.structure-item .icon-box {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 34px;
+}
+.advantage-cyprus .icon-purple {
+  background: linear-gradient(to bottom, rgb(130, 140, 222),rgb(109, 49, 208));
+}
+.advantage-cyprus .icon-yellow,
+.structure-item .icon-yellow {
+  background: linear-gradient(to right, rgb(254, 111, 45), rgb(255, 208, 89));
+}
+.advantage-cyprus .icon-aqua,
+.structure-item .icon-aqua {
+  background: linear-gradient(to right, rgb(130, 140, 222), rgb(0, 184, 195));
+}
+.advantage-cyprus .icon-pink,
+.structure-item .icon-pink {
+  background: linear-gradient(to right, rgba(255, 185, 175, 0.3), rgba(166, 81, 251, 1));
+}
+.structure-item .icon-blue {
+  background: linear-gradient(to right, rgba(46, 163, 242, 1), rgba(166, 81, 251, 1));
 }
 .advantage-cyprus p,
 .structure-item p {
@@ -401,6 +434,7 @@ header {
 .choose-location-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .map {
   padding-top: 65px;
@@ -408,6 +442,24 @@ header {
 }
 .map a {
   display: block;
+}
+#CY-01:hover {
+  fill: rgba(255, 219, 128, 0.6);
+}
+#CY-02:hover {
+  fill:rgba(171, 128, 239, 0.6);
+}
+#CY-03:hover {
+  fill:rgba(237, 151, 73, 0.6);
+}
+#CY-04:hover {
+  fill:rgba(216, 216, 216, 0.6);
+}
+#CY-05:hover {
+  fill:rgba(109, 49, 208, 0.7);
+}
+#CY-06:hover {
+  fill:rgba(216, 186, 216, 0.7);
 }
 .find {
   text-transform: uppercase;
